@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://192.168.124.211:1434;databaseName=greentradepilot;encrypt=true;trustServerCertificate=true;
+    username: tuanlv
+    password: Tuan@123456
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  kafka:
+    bootstrap-servers: localhost:9092
+    replication-factor: 1
+    number-partitions: 10
+
+websocket:
+  url: ws://192.168.124.210:3000/
+  delay-reconnect: 5000
+
